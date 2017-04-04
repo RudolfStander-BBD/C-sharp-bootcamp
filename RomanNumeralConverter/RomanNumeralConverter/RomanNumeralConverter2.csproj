@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.5</TargetFramework>
+    <AssemblyName>RomanNumeralConverter2</AssemblyName>
+    <RootNamespace>RomanNumeralConverter2</RootNamespace>
+  </PropertyGroup>
+
+</Project>
