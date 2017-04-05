@@ -61,8 +61,17 @@ namespace CustomerWebApi.Controllers
                 return NotFound();
             }
 
-            customer.CustomerId = dbCustomer.CustomerId;
-            _customerRepository.Update(customer);
+            dbCustomer.Name = customer.Name;
+            dbCustomer.FirstName = customer.FirstName;
+            dbCustomer.LastName = customer.LastName;
+            dbCustomer.Email = customer.Email;
+            dbCustomer.Phone = customer.Phone;
+            dbCustomer.Address = customer.Address;
+            dbCustomer.City = customer.City;
+            dbCustomer.State = customer.State;
+            dbCustomer.PostalAddress = customer.PostalAddress;
+
+            _customerRepository.Update(dbCustomer);
 
             return new NoContentResult();
         }
